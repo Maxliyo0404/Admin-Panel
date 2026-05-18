@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import React from 'react'
 import { FaPhone } from "react-icons/fa6";
-import { GiTeacher } from "react-icons/gi";
+import { FaChalkboardTeacher } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 function Sidebar() {
   return (
