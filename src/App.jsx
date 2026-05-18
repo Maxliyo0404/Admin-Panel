@@ -8,7 +8,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      <Routes path="/" element={<Layout/>}/> 
+       <Route>
+        <Route path="" element={}/>
+
+       </Route>
       
+      
+      <Routes/>
       </BrowserRouter>
     </div>
   )
