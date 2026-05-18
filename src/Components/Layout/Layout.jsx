@@ -12,11 +12,15 @@ function Layout() {
           <Sidebar/>
       </aside>
        
-
-          <Header/> 
-        <main>
+     <div className="main-wrapper">
+         <Header/> 
+    <main className="contet-body">
             <Outlet/>
         </main>
+
+     </div>
+         
+    
     </div>
   )
 }
