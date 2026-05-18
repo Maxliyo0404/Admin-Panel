@@ -6,7 +6,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 function Sidebar() {
   return (
-    <div className="container">
+    <div className="cards">
         <h1 className="sidebar-title">Logo</h1>
         <ul className="sidebar-list">
             <li><Link className="sidebat-link" to="contacts">  <FaPhone /> Contacts</Link></li>
