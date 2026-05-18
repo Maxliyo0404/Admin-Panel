@@ -9,7 +9,7 @@ function Sidebar() {
     <div className="container">
         <h1 className="sidebar-title">Logo</h1>
         <ul className="sidebar-list">
-            <li><Link className="sidebat-link" to="contacts">Contacts <FaPhone /> </Link></li>
+            <li><Link className="sidebat-link" to="contacts">  <FaPhone /> Contacts</Link></li>
             <li><Link className="sidebat-link" to="teachers">Teachers <GiTeacher /> </Link></li>
             <li><Link className="sidebat-link" to="students">Students <PiStudentBold /> </Link></li>
         </ul>
