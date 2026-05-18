@@ -2,6 +2,9 @@ import "./App.css";
 import React from 'react'
 import Layout from "./Components/Layout/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contacts from "./Pages/ContactPages/ContactPages";
+import Teachers from "./Pages/Teacherspage/TeachersPages";
+import Students from "./Pages/StudentsPages/StudentPages";
 
 
 function App() {
@@ -11,7 +14,9 @@ function App() {
       <BrowserRouter>
       <Routes path="/" element={<Layout/>}/> 
        <Route>
-        <Route path="" element={}/>
+        <Route path="contact" element={<Contacts/>}/>
+        <Route path="contact" element={<Contacts/>}/>
+        <Route path="contact" element={<Contacts/>}/>
 
        </Route>
       
