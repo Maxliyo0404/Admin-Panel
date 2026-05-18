@@ -4,7 +4,9 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <header className="header">
+   
+    </header>
   )
 }
 
