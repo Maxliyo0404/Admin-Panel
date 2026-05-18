@@ -7,9 +7,13 @@ import Sidebar from "../Sidebar/Sidebar";
 
 function Layout() {
   return (
-    <div>
-        <Header/> 
-        <Sidebar/>
+    <div className="layout-wrapper">
+      <aside className="sidibar-aside">
+          <Sidebar/>
+      </aside>
+       
+
+          <Header/> 
         <main>
             <Outlet/>
         </main>
