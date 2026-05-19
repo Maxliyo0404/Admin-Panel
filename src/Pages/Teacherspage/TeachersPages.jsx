@@ -11,7 +11,7 @@ const TeachersPages = () =>{
         console.log(teachers);
         
       })
-    })
+    },[]);
 
   return (
     <div className="teacher-wrapper">

@@ -4,14 +4,14 @@ import React, { useEffect, useState } from 'react'
 const StudentPages = () => {
   const [students, setStudents] = useState([]);
   useEffect(()=>{
-    fetch("https://6a0bb62a5aa893e1015a6639.mockapi.io/Students")
+    fetch("https://6a0bc87e5aa893e1015a7b82.mockapi.io/students")
     .then(response => response.json())
     .then(students =>{
       setStudents(students)
       console.log(students);
       
     })
-  });
+  },[]);
   return (
     <div className="students-wrapper">
       <div className="students">
