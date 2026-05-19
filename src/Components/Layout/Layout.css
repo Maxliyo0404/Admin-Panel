@@ -1,27 +1,24 @@
 .layout-wrapper {
-  display: flex; /* Sidebar va Main-wrapper elementlarini YONMA-YON qiladi */
+  display: flex; 
   width: 100%;
   min-height: 100vh;
   background-color: #f4f6f9;
 }
-
 .sidibar-aside {
   width: 260px;
   min-width: 260px;
   height: 100vh;
-  position: sticky; /* Skroll bo'lganda ham chap taraf qotib turadi */
+  position: sticky;
   top: 0;
 }
-
 .main-wrapper {
   display: flex;
-  flex-direction: column; /* Header tepada, Outlet esa pastda turishi uchun */
-  flex-grow: 1; /* Ekranning qolgan hamma kengligini egallaydi */
+  flex-direction: column; 
+  flex-grow: 1;
 }
-
 .contet-body {
   padding: 24px;
   flex-grow: 1;
-  overflow-y: auto; /* Agar sahifangiz uzun bo'lsa, faqat shu joy skroll bo'ladi */
-  height: calc(100vh - 70px); /* 70px bu Header'ning balandligi */
+  overflow-y: auto; 
+  height: calc(100vh - 70px); 
 }
