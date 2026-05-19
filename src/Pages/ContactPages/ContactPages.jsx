@@ -22,9 +22,8 @@ const ContactPages = () => {
     <p className="contact-phone">
       <strong>Tel:</strong> {el.number}
     </p>
-    <p className="contact-email">
-      <strong>Email:</strong> {el.email}
-    </p>
+    <a className="contact-email" href="#"><strong>Email:</strong> {el.email}</a>
+    
     
   
   </div>

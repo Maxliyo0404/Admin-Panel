@@ -1,0 +1,42 @@
+.contact-wrapper{
+   max-width: 1200px;
+   background: black;
+   padding: 20px;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.contact{
+    max-width: 100%;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px;
+    &:hover{
+        transform: scale(0.8);
+    }
+
+}
+
+.contact-title{
+    max-width: 100%;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-phone{
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-email{
+    max-width: 100%;
+    font-size: 15px;
+   
+
+}
