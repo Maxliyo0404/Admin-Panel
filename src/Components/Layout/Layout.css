@@ -24,36 +24,43 @@
 }
 @media screen and (max-width: 992px) {
   .layout-wrapper {
-    flex-direction: column; 
-    overflow: visible
+    flex-direction: column !important;
+    overflow: visible !important; 
   }
-
-  /* Aynan shu qism sticky va balandlik muammosini hal qiladi */
   .sidibar-aside {
     width: 100% !important;
     min-width: 100% !important;
-    height: auto !important;     /* 100vh balandlikni bekor qiladi */
-    position: static !important; /* Sticky holatni bekor qilib, oddiy blok qiladi */
-    order: 1;                    /* Hamma narsadan tepada (1-o'rinda) turadi */
+    height: auto !important;
+    position: -webkit-sticky !important;
+    position: sticky !important;       
+    top: 0 !important;
+    z-index: 9999 !important;           
+    order: 1;
   }
-
+  .sidebar {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    position: -webkit-sticky !important;
+    position: sticky !important; 
+    top: 0 !important;
+    z-index: 9999 !important;
+  }
   .main-wrapper {
-    order: 2;                    /* Menyudan keyin (2-o'rinda) turadi */
+    order: 2; 
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow: visible !important; 
   }
-
-  /* Header (Inputlar qismi) main-wrapper ichida 1-o'rinda (ya'ni o'rtada) turadi */
   .header {
     order: 1; 
     width: 100%;
   }
-
-  /* Content (O'qituvchilar/Talabalar) headerdan keyin (eng oxirida) turadi */
   .contet-body {
     order: 2; 
-    height: auto !important;     /* calc(100vh - 70px) ni bekor qiladi */
+    height: auto !important; 
+    overflow-y: visible !important; 
     padding: 20px;
     width: 100%;
   }

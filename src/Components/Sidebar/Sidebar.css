@@ -36,36 +36,30 @@
 }
 @media screen and (max-width: 992px) {
   .sidebar {
-    max-width: 100% !important; /* Mobil ekranda enini to'liq qiladi */
+    max-width: 100% !important; 
     width: 100% !important;
-    height: auto !important;     /* 100vh balandlikni bekor qiladi */
-    
-    /* MANA SHU QATORLAR MENYUNI TEPADA QOTIRIB QO'YADI: */
+    height: auto !important;    
     position: sticky !important; 
     top: 0 !important;
-    z-index: 999 !important;     /* Kontent skroll bo'lganda menyu tagidan o'tishi uchun */
+    z-index: 999 !important;    
   }
-
   .sidebar-wrapper {
     height: auto !important;
     padding: 15px 20px; 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Logo chapda, menyular o'ngda */
+    justify-content: space-between; 
     background: #1e1e2f;
   }
-
   .sidebar-title {
     margin-bottom: 0 !important;
     font-size: 24px !important;
   }
-
   .sidebar-wrapper nav { 
     display: flex;
-    flex-direction: row; /* Menyularni yonma-yon (gorizontal) qiladi */
+    flex-direction: row;
     gap: 15px;
   }
-
   .sidebat-link {
     margin-bottom: 0 !important;
     padding: 8px 12px !important;
