@@ -60,3 +60,12 @@
         
     }
 }
+@media screen and (max-width: 576px) {
+  .contact-wrapper {
+    padding: 12px;
+  }
+  .contacts {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+}
