@@ -12,7 +12,18 @@ const TeachersPages = () =>{
     })
 
   return (
-    <div>TeachersPages</div>
+    <div className="students-wrapper">
+      <div className="students">
+        {students.map((el)=>(
+          <div className="student" key={el.id}>
+    
+            <img className="rasm" src={el.avatar} alt="rasm" />
+            <h1 className="student-title">{el.name}</h1>
+             <a className="id" href="#">{el.id}</a>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 

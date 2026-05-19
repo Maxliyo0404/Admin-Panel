@@ -7,7 +7,7 @@ const StudentPages = () => {
     fetch("https://6a0bb62a5aa893e1015a6639.mockapi.io/Students")
     .then(response => response.json())
     .then(student =>{
-      setStudents(student)
+      setStudents(students)
       console.log(students);
       
     })
