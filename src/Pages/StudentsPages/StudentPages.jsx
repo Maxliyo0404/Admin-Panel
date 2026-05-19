@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 const StudentPages = () => {
   const [students, setStudents] = useState([]);
   useEffect(()=>{
-    fetch("https://6a0bc87e5aa893e1015a7b82.mockapi.io/students")
+    fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Students")
     .then(response => response.json())
     .then(students =>{
       setStudents(students)
