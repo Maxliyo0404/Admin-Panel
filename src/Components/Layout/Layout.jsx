@@ -9,7 +9,7 @@ function Layout() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <div className="layout-wrapper">
-      <aside className="sidibar-aside">
+      <aside className="sidibar">
           <Sidebar/>
       </aside>
        

@@ -25,6 +25,7 @@
 @media screen and (max-width: 992px) {
   .layout-wrapper {
     flex-direction: column; 
+    overflow: visible
   }
 
   /* Aynan shu qism sticky va balandlik muammosini hal qiladi */
