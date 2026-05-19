@@ -26,26 +26,34 @@
   .layout-wrapper {
     flex-direction: column; 
   }
+
+  /* Aynan shu qism sticky va balandlik muammosini hal qiladi */
   .sidibar-aside {
-    order: 1; 
+    width: 100% !important;
+    min-width: 100% !important;
+    height: auto !important;     /* 100vh balandlikni bekor qiladi */
+    position: static !important; /* Sticky holatni bekor qilib, oddiy blok qiladi */
+    order: 1;                    /* Hamma narsadan tepada (1-o'rinda) turadi */
   }
+
   .main-wrapper {
-    order: 2; 
+    order: 2;                    /* Menyudan keyin (2-o'rinda) turadi */
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
+
+  /* Header (Inputlar qismi) main-wrapper ichida 1-o'rinda (ya'ni o'rtada) turadi */
   .header {
     order: 1; 
+    width: 100%;
   }
+
+  /* Content (O'qituvchilar/Talabalar) headerdan keyin (eng oxirida) turadi */
   .contet-body {
     order: 2; 
-    height: auto;
+    height: auto !important;     /* calc(100vh - 70px) ni bekor qiladi */
     padding: 20px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .contet-body {
-    padding: 12px;
+    width: 100%;
   }
 }

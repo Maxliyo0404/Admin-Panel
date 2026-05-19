@@ -35,49 +35,52 @@
      }
 }
 @media screen and (max-width: 992px) {
-  .sidibar-aside {
-    width: 100%;
-    min-width: 100%;
-    height: auto;
-    position: relative;
-    border-bottom: 1px solid #2d2d3f; 
+  /* .sidibar-aside emas, aynan .sidebar klassini to'g'rilaymiz */
+  .sidebar {
+    max-width: 100% !important; /* Enini to'liq qiladi */
+    width: 100% !important;
+    height: auto !important;     /* 100vh ni bekor qiladi */
+    position: static !important; /* Fixed holatini yo'qotadi, kontent pastga tushadi */
   }
+
   .sidebar-wrapper {
-    height: auto;
+    height: auto !important;
     padding: 15px 20px; 
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-  }
-  .sidebar-title {
-    margin-bottom: 0;
-    font-size: 24px;
+    justify-content: space-between; /* Logo chapda, menyular o'ngda */
+    background: #1e1e2f;
   }
 
+  .sidebar-title {
+    margin-bottom: 0 !important;
+    font-size: 24px !important;
+  }
+
+  /* HTML ichidagi nav tegini yonma-yon qilamiz */
   .sidebar-wrapper nav { 
     display: flex;
-    gap: 10px;
+    flex-direction: row; /* Menyularni gorizontal qiladi */
+    gap: 15px;
   }
 
   .sidebat-link {
-    margin-bottom: 0;
-    padding: 8px 12px;
-    font-size: 0.95rem;
+    margin-bottom: 0 !important;
+    padding: 8px 12px !important;
+    font-size: 0.95rem !important;
   }
 }
 
+/* Telefon ekrani uchun (kichik ekranlarda ham yonma-yon turishi uchun) */
 @media screen and (max-width: 576px) {
   .sidebar-wrapper {
-    flex-direction: column; 
-    gap: 12px;
-    align-items: flex-start;
-    padding: 12px 15px;
+    flex-direction: row !important; /* Ustma-ust emas, yonma-yon turaversin */
+    justify-content: space-between;
   }
-  
+
   .sidebar-wrapper nav {
-    width: 100%;
-    overflow-x: auto; 
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 }
-

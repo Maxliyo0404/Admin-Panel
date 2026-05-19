@@ -52,16 +52,35 @@
 }
 @media screen and (max-width: 576px) {
   .header {
-    height: auto;
-    padding: 15px;
+    height: auto !important; /* Fixed 70px balandlikni bekor qilamiz */
+    padding: 15px !important;
+    order: 1; /* Menyudan keyin, ya'ni o'rtada turishini ta'minlaydi */
+    width: 100%;
   }
 
   .header-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column; /* Inputlar va "Download CV" tugmasini ustma-ust qiladi */
     gap: 12px;
+    width: 100%;
   }
 
   .form {
-    max-width: 100%; 
+    max-width: 100% !important; /* Input formasi butun ekranni egallaydi */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Input va uning ichidagi qidiruv tugmasi ham ustma-ust tushishi uchun (agar kerak bo'lsa) */
+    gap: 8px;
+  }
+
+  .input {
+    width: 100% !important; /* Input to'liq eni bo'yicha yoyiladi */
+  }
+
+  /* "Download CV" tugmasi ham mobil ekranda chiroyli to'liq eni bo'ylab turishi uchun */
+  .header-container .button,
+  .header-container a {
+    width: 100% !important;
+    text-align: center; /* Tugma ichidagi yozuvni o'rtaga tekislaydi */
   }
 }
