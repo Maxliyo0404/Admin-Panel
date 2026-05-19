@@ -1,7 +1,11 @@
 import "./ContactPages.css";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function ContactPages() {
+const ContactPages = () => {
+  const [contact, setContact] = useState([]);
+  useEffect(()=>{
+    fetch
+  })
   return (
     <div>ContactPages</div>
   )
