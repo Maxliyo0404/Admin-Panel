@@ -18,9 +18,9 @@ const StudentPages = () => {
         {students.map((el)=>(
           <div className="student" key={el.id}>
     
-            <img src={el.avatar} alt="rasm" />
+            <img className="rasm" src={el.avatar} alt="rasm" />
             <h1 className="student-title">{el.name}</h1>
-           <p>{el.id}</p>
+             <a className="id" href="#">{el.id}</a>
           </div>
         ))}
       </div>
