@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  background-color: #ffffff; /* Toza oq fon */
+  padding: 15px 24px; /* Yuqori-pastki va o'ng-chap ichki bo'shliqlar */
+  border-bottom: 1px solid #e2e8f0; /* Pastki chiziq ajratib turishi uchun */
+  display: flex;
+  align-items: center; /* Vertikal o'rtaga tekislaydi */
+  height: 70px; /* Layout.css dagi calc balandlikka mos tushadi */
+}
+
+/* Ichki elementlarni o'rab turuvchi container */
+.header-container {
+  width: 100%;
+  display: flex; /* Elementlarni yonma-yon qiladi */
+  justify-content: space-between; /* Formani chapga, Tugmani o'ngga suradi */
+  align-items: center; /* Vertikal tekislik */
+}
+
+/* Qidiruv formasi */
+.form {
+  display: flex;
+  align-items: center;
+  max-width: 400px; /* Qidiruv maydoni juda yoyilib ketmasligi uchun */
+  width: 100%;
+}
+
+/* Qidiruv inputi stilizatsiyasi */
+.input {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px; /* Burchaklarni yumshatish */
+  outline: none;
+  background-color: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+/* Inputga bosilgandagi (Focus) effekt */
+.input:focus {
+  border-color: #3b82f6; /* Ko'k rangli border */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); /* Atrofi yumshoq nur taratadi */
+}
+
+/* Download CV tugmasi stilizatsiyasi */
+.button {
+  background-color: #3b82f6; /* Sidebar aktiv rangi bilan bir xil chiroyli ko'k */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Tugma ustiga sichqoncha kelganda */
+.button:hover {
+  background-color: #2563eb; /* Biroz to'qroq ko'k rang */
+}

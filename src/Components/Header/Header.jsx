@@ -2,12 +2,12 @@ import "./Header.css";
 import React from 'react'
 
 
-function Header() {
+function Header({searchTerm, setSearchTerm}) {
   return (
     <header className="header">
    <div className="header-container">
-    <form className="form">
-      <input type="text" required placeholder="Search...." />
+    <form className="form" onSubmit={(el)=> e.preventDefault()}>
+      <input className="input" type="text" required placeholder="Search...." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
     </form>
     <button className="button">Dowload CV</button>
    </div>

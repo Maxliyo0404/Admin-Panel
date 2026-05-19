@@ -6,9 +6,9 @@
     right: 0;
 }
 .sidebar-wrapper{
-    background: black;
+     background: #1e1e2f;
     height: 100vh;
-    padding: 30px;
+    padding: 30px 20px;
 }
 .sidebar-title{
     font-size: 60px;
@@ -22,5 +22,14 @@
     margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
+    padding: 12px 15px;
+    border-radius: 8px;
+     transition: all 0.3s ease;
+     &:hover{
+         background: #3b82f6; 
+        color: #ffffff;
+     }
 }
+
+

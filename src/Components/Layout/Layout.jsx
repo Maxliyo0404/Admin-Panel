@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
 import "./Layout.css";
-import React from 'react'
+import React, { useState } from 'react'
 import Header from "../Header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 
 
 function Layout() {
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <div className="layout-wrapper">
       <aside className="sidibar-aside">
@@ -13,9 +14,9 @@ function Layout() {
       </aside>
        
      <div className="main-wrapper">
-         <Header/> 
+        <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> 
     <main className="contet-body">
-            <Outlet/>
+            <Outlet context={[searchTerm]} />
         </main>
 
      </div>
