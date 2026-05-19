@@ -50,3 +50,18 @@
     background-color: #2563eb;
   }
 }
+@media screen and (max-width: 576px) {
+  .header {
+    height: auto;
+    padding: 15px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form {
+    max-width: 100%; 
+  }
+}
