@@ -34,5 +34,44 @@
         color: #ffffff;
      }
 }
+@media screen and (max-width: 992px) {
+  .sidibar-aside {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    position: relative;
+  }
 
+  .sidebar-wrapper {
+    height: auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+
+  .sidebar-title {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+
+  .sidebar-wrapper nav { 
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebat-link {
+    margin-bottom: 0;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
 
