@@ -11,11 +11,13 @@ const ContactPages = () => {
       console.log(contact);
       
     })
-  })
+  });
   return (
-   {contacts.map((el) => (
-  <div className="student" key={el.id}> 
-    <h1 className="student-title">{el.name}</h1>
+    <div className="contact-wrapper">
+      <div className="contacts">
+          {contact.map((el) => (
+  <div className="contact" key={el.id}> 
+    <h1 className="contact-title">{el.name}</h1>
 
     <p className="contact-phone">
       <strong>Tel:</strong> {el.number}
@@ -24,9 +26,12 @@ const ContactPages = () => {
       <strong>Email:</strong> {el.email}
     </p>
     
-    <a className="id" href="#">ID: {el.id}</a>
+  
   </div>
 ))}
+      </div>
+    </div>
+  
   )
 }
 
