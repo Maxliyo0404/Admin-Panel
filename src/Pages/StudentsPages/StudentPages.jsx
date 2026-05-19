@@ -1,9 +1,11 @@
 import "./StudentPages.css"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function StudentPages() {
+const StudentPages = () => {
+  const [students, setStudents] = useState([]);
+  useEffect(()=>)
   return (
-    <div>StudentPages</div>
+    <div></div>
   )
 }
 
