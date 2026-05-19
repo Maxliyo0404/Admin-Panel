@@ -1,8 +1,10 @@
+import { useOutletContext } from "react-router-dom";
 import "./StudentPages.css"
 import React, { useEffect, useState } from 'react'
 
 const StudentPages = () => {
   const [students, setStudents] = useState([]);
+  const [searchTerm] = useOutletContext()
   useEffect(()=>{
     fetch("https://699d9b4283e60a406a46e1ba.mockapi.io/Students")
     .then(response => response.json())
@@ -12,10 +14,16 @@ const StudentPages = () => {
       
     })
   },[]);
+   const filteredStudents = students.filter((el)=>{
+    if(!el.name) return false;
+    const searchInLowercase = searchTerm.toLowerCase();
+    const nameParts = el.name.toLowerCase().split(" ");
+    return nameParts.some((part)=> part. startsWith(searchInLowercase));
+   });
   return (
     <div className="students-wrapper">
       <div className="students">
-        {students.map((el)=>(
+        {filteredStudents.map((el)=>(
           <div className="student" key={el.id}>
     
             <img className="rasm" src={el.avatar} alt="rasm" />
