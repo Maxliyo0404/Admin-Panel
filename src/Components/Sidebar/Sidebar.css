@@ -35,12 +35,15 @@
      }
 }
 @media screen and (max-width: 992px) {
-  /* .sidibar-aside emas, aynan .sidebar klassini to'g'rilaymiz */
   .sidebar {
-    max-width: 100% !important; /* Enini to'liq qiladi */
+    max-width: 100% !important; /* Mobil ekranda enini to'liq qiladi */
     width: 100% !important;
-    height: auto !important;     /* 100vh ni bekor qiladi */
-    position: static !important; /* Fixed holatini yo'qotadi, kontent pastga tushadi */
+    height: auto !important;     /* 100vh balandlikni bekor qiladi */
+    
+    /* MANA SHU QATORLAR MENYUNI TEPADA QOTIRIB QO'YADI: */
+    position: sticky !important; 
+    top: 0 !important;
+    z-index: 999 !important;     /* Kontent skroll bo'lganda menyu tagidan o'tishi uchun */
   }
 
   .sidebar-wrapper {
@@ -57,10 +60,9 @@
     font-size: 24px !important;
   }
 
-  /* HTML ichidagi nav tegini yonma-yon qilamiz */
   .sidebar-wrapper nav { 
     display: flex;
-    flex-direction: row; /* Menyularni gorizontal qiladi */
+    flex-direction: row; /* Menyularni yonma-yon (gorizontal) qiladi */
     gap: 15px;
   }
 
@@ -68,19 +70,5 @@
     margin-bottom: 0 !important;
     padding: 8px 12px !important;
     font-size: 0.95rem !important;
-  }
-}
-
-/* Telefon ekrani uchun (kichik ekranlarda ham yonma-yon turishi uchun) */
-@media screen and (max-width: 576px) {
-  .sidebar-wrapper {
-    flex-direction: row !important; /* Ustma-ust emas, yonma-yon turaversin */
-    justify-content: space-between;
-  }
-
-  .sidebar-wrapper nav {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
   }
 }
