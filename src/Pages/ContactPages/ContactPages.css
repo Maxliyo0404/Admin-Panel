@@ -1,42 +1,50 @@
 .contact-wrapper{
    max-width: 1200px;
-   background: black;
+   background: rgb(60, 60, 60);
    padding: 20px;
 }
 .contacts{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
 }
 .contact{
     max-width: 100%;
-    border: 1px solid gray;
-    text-align: center;
+    background: #212529;
+    border: 1px solid #343a40;
     border-radius: 12px;
     padding: 20px;
     &:hover{
         transform: scale(0.8);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        border-color: #495057;
     }
 
 }
 
 .contact-title{
-    max-width: 100%;
-    font-size: 25px;
-    line-height: 30px;
-    color: #fff;
-    margin-bottom: 10px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 12px;
 }
 .contact-phone{
-    max-width: 100%;
-    font-size: 18px;
-    line-height: 30px;
-    color: #fff;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #adb5bd;
     margin-bottom: 10px;
 }
 .contact-email{
-    max-width: 100%;
-    font-size: 15px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #60a5fa;
    
 
+}
+.strong{
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+ 
 }

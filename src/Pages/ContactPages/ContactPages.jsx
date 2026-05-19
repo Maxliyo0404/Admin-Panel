@@ -20,9 +20,9 @@ const ContactPages = () => {
     <h1 className="contact-title">{el.name}</h1>
 
     <p className="contact-phone">
-      <strong>Tel:</strong> {el.number}
+      <strong className="strong">Tel:</strong> {el.number}
     </p>
-    <a className="contact-email" href="#"><strong>Email:</strong> {el.email}</a>
+    <a className="contact-email" href="#"><strong className="strong">Email:</strong> {el.email}</a>
     
     
   
