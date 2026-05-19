@@ -40,16 +40,15 @@
     min-width: 100%;
     height: auto;
     position: relative;
+    border-bottom: 1px solid #2d2d3f; 
   }
-
   .sidebar-wrapper {
     height: auto;
-    padding: 15px 20px;
+    padding: 15px 20px; 
     display: flex;
     align-items: center;
     justify-content: space-between; 
   }
-
   .sidebar-title {
     margin-bottom: 0;
     font-size: 24px;
@@ -69,9 +68,16 @@
 
 @media screen and (max-width: 576px) {
   .sidebar-wrapper {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; 
+    gap: 12px;
     align-items: flex-start;
+    padding: 12px 15px;
+  }
+  
+  .sidebar-wrapper nav {
+    width: 100%;
+    overflow-x: auto; 
+    padding-bottom: 5px;
   }
 }
 
