@@ -1,5 +1,7 @@
 import "./ContactPages.css";
 import React, { useEffect, useState } from 'react'
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 const ContactPages = () => {
   const [contact, setContact] = useState([]);
@@ -20,9 +22,9 @@ const ContactPages = () => {
     <h1 className="contact-title">{el.name}</h1>
 
     <p className="contact-phone">
-      <strong className="strong">Tel:</strong> {el.number}
+      <strong className="strong"><FaPhoneAlt /></strong> {el.number}
     </p>
-    <a className="contact-email" href="#"><strong className="strong">Email:</strong> {el.email}</a>
+    <a className="contact-email" href="#"><strong className="strong"><MdOutlineMailOutline /></strong> {el.email}</a>
     
     
   

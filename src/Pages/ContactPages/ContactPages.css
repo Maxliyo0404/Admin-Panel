@@ -31,20 +31,29 @@
 }
 .contact-phone{
     width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     font-size: 0.9rem;
     color: #adb5bd;
     margin-bottom: 10px;
 }
 .contact-email{
     width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     font-size: 0.9rem;
     color: #60a5fa;
    
 
 }
 .strong{
-    font-size: 18px;
-    line-height: 30px;
-    color: #fff;
+    width: 18px;
+    font-size: 0.90rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: #60a5fa ;
  
 }
