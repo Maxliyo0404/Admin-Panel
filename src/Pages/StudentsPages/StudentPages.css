@@ -22,7 +22,6 @@
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 .rasm{
     width: 100%;
@@ -32,7 +31,6 @@
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     margin-bottom: 15px;
-
 }
 .student-title{
    width: 100%;
@@ -48,6 +46,4 @@
     gap: 5px;
     font-size: 0.9rem;
     color: #adb5bd;
-
-    
 }
