@@ -8,6 +8,8 @@ const TeachersPages = () =>{
       .then(response => response.json())
       .then(teacher =>{
         setTeachers(teachers)
+        console.log(teachers);
+        
       })
     })
 
