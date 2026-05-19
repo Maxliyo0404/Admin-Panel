@@ -6,12 +6,12 @@ const StudentPages = () => {
   useEffect(()=>{
     fetch("https://6a0bb62a5aa893e1015a6639.mockapi.io/Students")
     .then(response => response.json())
-    .then(student =>{
+    .then(students =>{
       setStudents(students)
       console.log(students);
       
     })
-  })
+  });
   return (
     <div className="students-wrapper">
       <div className="students">

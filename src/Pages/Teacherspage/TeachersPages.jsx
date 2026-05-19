@@ -6,7 +6,7 @@ const TeachersPages = () =>{
     useEffect(() =>{
       fetch("https://6a0bc87e5aa893e1015a7b82.mockapi.io/Teachers")
       .then(response => response.json())
-      .then(teacher =>{
+      .then(teachers =>{
         setTeachers(teachers)
         console.log(teachers);
         
@@ -15,8 +15,8 @@ const TeachersPages = () =>{
 
   return (
     <div className="teacher-wrapper">
-      <div className="teacchers">
-        {students.map((el)=>(
+      <div className="teachers">
+        {teachers.map((el)=>(
           <div className="teacher" key={el.id}>
     
             <img className="rasm" src={el.avatar} alt="rasm" />
