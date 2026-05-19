@@ -1,0 +1,26 @@
+.sidebar{
+    max-width: 260px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.sidebar-wrapper{
+    background: black;
+    height: 100vh;
+    padding: 30px;
+}
+.sidebar-title{
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.sidebat-link{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
