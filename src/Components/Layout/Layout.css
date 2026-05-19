@@ -22,3 +22,18 @@
   overflow-y: auto; 
   height: calc(100vh - 70px); 
 }
+@media screen and (max-width: 992px) {
+  .layout-wrapper {
+    flex-direction: column; 
+  }
+  .contet-body {
+    height: auto; 
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contet-body {
+    padding: 12px;
+  }
+}
