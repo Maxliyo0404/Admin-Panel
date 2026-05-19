@@ -5,7 +5,7 @@ const StudentPages = () => {
   const [students, setStudents] = useState([]);
   useEffect(()=>{
     fetch("https://6a0bb62a5aa893e1015a6639.mockapi.io/Students")
-    .then(recurse = recurse.json())
+    .then(response = response.json())
     .then(student =>{
       setStudents(student)
       console.log();
@@ -13,7 +13,15 @@ const StudentPages = () => {
     })
   })
   return (
-    <div></div>
+    <div className="students-wrapper">
+      <div className="students">
+        {students.map((el)=>(
+          <div className="student" key={el.id}>
+            
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 
