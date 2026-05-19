@@ -13,6 +13,9 @@
     border: 1px solid gray;
     text-align: center;
     border-radius: 12px;
+    &:hover{
+        transform: scale(0.8);
+    }
 
 }
 .rasm{
