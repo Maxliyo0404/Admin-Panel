@@ -1,0 +1,42 @@
+.teachers-wrapper{
+   max-width: 1200px;
+   background: black;
+   padding: 20px;
+}
+.teachers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.teacher{
+    max-width: 100%;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 12px;
+    &:hover{
+        transform: scale(0.8);
+    }
+
+}
+.rasm{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 20px;
+
+}
+.teacher-title{
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.id{
+    font-size: 25px;
+    line-height: 25px;
+    color: #fff;
+
+    
+}
