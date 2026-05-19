@@ -8,7 +8,7 @@ const StudentPages = () => {
     .then(response = response.json())
     .then(student =>{
       setStudents(student)
-      console.log();
+      console.log(students);
       
     })
   })
@@ -17,7 +17,9 @@ const StudentPages = () => {
       <div className="students">
         {students.map((el)=>(
           <div className="student" key={el.id}>
-            
+            <img src={el.avatar} alt="rasm" />
+            <h1 className="student-title">{el.name}</h1>
+            <a className="student-link" href="#">{el.id}</a>
           </div>
         ))}
       </div>
