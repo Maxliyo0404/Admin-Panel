@@ -3,7 +3,23 @@
    background: skyblue;
    padding: 20px;
 }
+.students{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
 .student{
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 100%;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 12px;
+
+}
+.rasm{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
 }
