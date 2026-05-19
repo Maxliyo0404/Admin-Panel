@@ -1,7 +1,12 @@
 import "./TeachersPages.css";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function TeachersPages() {
+const TeachersPages = () =>{
+  const [teachers, setTeachers]= useState([];
+    useEffect(() =>{
+      fetch("")
+    })
+  )
   return (
     <div>TeachersPages</div>
   )
