@@ -15,8 +15,7 @@
     color: #fff;
     margin-bottom: 30px;
      &:hover{
-         background: #3b82f6; 
-        color: #ffffff;
+        color: #3b82f6;
      }
 }
 .sidebat-link{
