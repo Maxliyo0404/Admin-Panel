@@ -48,3 +48,15 @@
     font-size: 0.9rem;
     color: #adb5bd;
 }
+@media screen and (max-width: 576px) {
+  .teacher-wrapper {
+    padding: 12px;
+  }
+  .teachers {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .rasm {
+    height: 190px; 
+  }
+}
